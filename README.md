@@ -73,15 +73,24 @@ The below sample codes were referenced for the following tasks and have been lic
 - Error log for page info request failing is handled using a .txt file whereas for the ORES score, it has been printed in the notebook. 
 
 ## Research Implications
-[WIP]
-Write several paragraphs that you will include in your README.  Your README should include a section header called “Research Implications” after which you will include your write-up paragraphs. One of your paragraphs should reflect on what you have learned, what you found, what (if anything) surprised you about your findings, and/or what theories you have about why any biases might exist (if you find they exist). In addition to any reflections you want to share about the process of the assignment, please respond (briefly) to at least three of the questions below:
-What biases did you expect to find in the data (before you started working with it), and why?
-What (potential) sources of bias did you discover in the course of your data processing and analysis?
-What might your results suggest about (English) Wikipedia as a data source?
-What might your results suggest about the internet and global society in general?
-Can you think of a realistic data science research situation where using these data (to train a model, perform a hypothesis-driven research, or make business decisions) might create biased or misleading results, due to the inherent gaps and limitations of the data?
-Can you think of a realistic data science research situation where using these data (to train a model, perform a hypothesis-driven research, or make business decisions) might still be appropriate and useful, despite its inherent limitations and biases?
-How might a researcher supplement or transform this dataset to potentially correct for the limitations/biases you observed?
+ 
+**Reflection**
+It is essential to understand a data science project quantitively and qualitatively. This project gives a good walkthrough of qualitative analysis by considering bias in the data. The biases are caused due to the inherent raw data having human bias based on various reasons like demographic, religion, culture, gender etc. From this exericse, it is revealed that the article per capita maynot be the best indicator for this exercise as these values are not proportional to the population of a country. There is also a bias in terms of article per capita being higher in native english speaking countries.   
+
+**What biases did you expect to find in the data (before you started working with it), and why?**
+I expected the highest quality of articles to be from the first world countries. But after the exericse, it was surprising to see that many first world countries like the Unites States, Australia wwere not present in the dataset. Similarly Japan is seen as the bottom 10 countries for high quality articles per capita.     
+A major bias I feel is we are only accounting for articles in English which is very biased as populous regions like China, India would have majority of their high quality articles in their native languages.    
+
+**What might your results suggest about (English) Wikipedia as a data source?**  
+As mentioned above, I believe using only English articles as a data source creates a major bias. As per the internet ([Reference link](https://preply.com/en/blog/english-language-statistics/)) only 17% of the world's population speaks English. This number in itself shows that it is extremely biased to use only English articles for this exercise.   
+Another anamoly is to rely on ORES for the quality of the article as this is more biased towards the structure of the article more than the quality of the content in it.   
+
+**Can you think of a realistic data science research situation where using these data (to train a model, perform a hypothesis-driven research, or make business decisions) might create biased or misleading results, due to the inherent gaps and limitations of the data?**  
+Reference: [Mixed Messages? The Limits of Automated Social Media Content Analysis.](https://cdt.org/wp-content/uploads/2017/12/FAT-conference-draft-2018.pdf) and [AI’s Islamophobia problem](https://www.vox.com/future-perfect/22672414/ai-artificial-intelligence-gpt-3-bias-muslim)
+The above readings have a similar context along the lines of limitations of text classifiers in online content. The paper presented at the 2018 Conference on Fairness, Accountability, and Transparency dives deep into understanding the limitations of NLP and how it is essential to understand these drawbacks before policymakers can make decisions. The paper talks about the existing NLP research of text classifiers to address the gaps in policymakers' knowledge. The article supports the claims made by the paper by drawing a disturbing example of how AI has created an islamophobia problem.   
+
+**How might a researcher supplement or transform this dataset to potentially correct for the limitations/biases you observed?**
+There were several missing countries, it would be useful to be able to fetch data for these missing countries. Similarly the population of around 6 countries were shown as 0 cause of which they had to be excluded from the article per capita analysis, this could be due to the rounding error which needs to be checked correctly. There were several politicians whose articles were missing from the Wikipedia as well and some of them were represented in two countries. A researcher will have to go through the subject matter in depth to udnerstand these nuances. For Eg. one politician is shown in India and Pakistan and through data analysis his row was deleted cause of duplicate names but in reality this politician belonged to India before the country split in 1947 thus being taagged to both the countries being accurate. There could be many more such instances which needs to be corrected. 
 
 ## Best practices for documentation
 - PEP 8 – Style Guide for Python Code. ([Reference link](https://peps.python.org/pep-0008/))
