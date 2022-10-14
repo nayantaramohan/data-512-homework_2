@@ -86,7 +86,8 @@ As mentioned above, I believe using only English articles as a data source creat
 Another anamoly is to rely on ORES for the quality of the article as this is more biased towards the structure of the article more than the quality of the content in it.   
 
 **Can you think of a realistic data science research situation where using these data (to train a model, perform a hypothesis-driven research, or make business decisions) might create biased or misleading results, due to the inherent gaps and limitations of the data?**  
-Reference: [Mixed Messages? The Limits of Automated Social Media Content Analysis.](https://cdt.org/wp-content/uploads/2017/12/FAT-conference-draft-2018.pdf) and [AI’s Islamophobia problem](https://www.vox.com/future-perfect/22672414/ai-artificial-intelligence-gpt-3-bias-muslim)
+(Reference: [Mixed Messages? The Limits of Automated Social Media Content Analysis.](https://cdt.org/wp-content/uploads/2017/12/FAT-conference-draft-2018.pdf) and [AI’s Islamophobia problem](https://www.vox.com/future-perfect/22672414/ai-artificial-intelligence-gpt-3-bias-muslim))  
+
 The above readings have a similar context along the lines of limitations of text classifiers in online content. The paper presented at the 2018 Conference on Fairness, Accountability, and Transparency dives deep into understanding the limitations of NLP and how it is essential to understand these drawbacks before policymakers can make decisions. The paper talks about the existing NLP research of text classifiers to address the gaps in policymakers' knowledge. The article supports the claims made by the paper by drawing a disturbing example of how AI has created an islamophobia problem.   
 
 **How might a researcher supplement or transform this dataset to potentially correct for the limitations/biases you observed?**
