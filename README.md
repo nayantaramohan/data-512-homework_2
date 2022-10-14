@@ -31,19 +31,22 @@ The below sample codes were referenced for the following tasks and have been lic
 
 ## Data files
 
-#### Repository tree [WIP]
+#### Repository tree
 ```
-.
+├── input files
+│   ├── politicians_by_country_SEPT.2022.csv
+│   └── population_by_country_2022.csv
+├── intermediate files
+│   ├── politicians_by_country_SEPT.2022.csv
+│   ├── population_by_country_2022.csv 
+│   └── population_by_country_2022.csv 
+├── output files
+│   ├── wp_countries-no_match.txt
+│   └── wp_politicians_by_country.csv
 ├── LICENSE
 ├── README.md
-├── data-512-hw2-nmohan.ipynb
-├── error_log.txt
-├── politicians_by_country_SEPT.2022.csv
-├── population_by_country_2022.csv
-├── request_ores_score_per_article_output.csv
-├── request_pageinfo_per_article_output.csv
-├── wp_countries-no_match.txt
-├── wp_politicians_by_country.csv
+└── data-512-hw2-nmohan.ipynb
+
 ```
 #### Description
 - **LICENSE** : a file that contains an MIT LICENSE for nayantaramohan/data-512-homework_2 repo.
